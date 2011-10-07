@@ -32,7 +32,7 @@ int main(int argc, char** argv) {
             /*
              * If the Character is found Print its position and terminate the program
              */
-            printf("The character was found at : %d",i);
+            printf("The character was found at : %d",i+1);
             return 1;
         }
     }
