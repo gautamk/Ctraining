@@ -27,6 +27,7 @@ int CharPositionInString(char *str,char c) {
              */
             
             return i;
+
         }
     }
     /*
