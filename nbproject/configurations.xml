@@ -12,8 +12,10 @@
     <logicalFolder name="SourceFiles"
                    displayName="Source Files"
                    projectFiles="true">
+      <itemPath>CharacterPostionInString.c</itemPath>
+      <itemPath>GautamImplementations.h</itemPath>
+      <itemPath>Main.c</itemPath>
       <itemPath>../../Desktop/POS.C</itemPath>
-      <itemPath>main.c</itemPath>
     </logicalFolder>
     <logicalFolder name="TestFiles"
                    displayName="Test Files"
