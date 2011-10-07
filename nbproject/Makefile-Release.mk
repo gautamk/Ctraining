@@ -35,8 +35,7 @@ OBJECTDIR=${CND_BUILDDIR}/${CND_CONF}/${CND_PLATFORM}
 # Object Files
 OBJECTFILES= \
 	${OBJECTDIR}/CharacterPostionInString.o \
-	${OBJECTDIR}/Main.o \
-	${OBJECTDIR}/_ext/279880100/POS.o
+	${OBJECTDIR}/Main.o
 
 
 # C Compiler Flags
@@ -61,7 +60,7 @@ LDLIBSOPTIONS=
 
 ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/ctraining: ${OBJECTFILES}
 	${MKDIR} -p ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}
-	${LINK.cc} -o ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/ctraining ${OBJECTFILES} ${LDLIBSOPTIONS} 
+	${LINK.c} -o ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/ctraining ${OBJECTFILES} ${LDLIBSOPTIONS} 
 
 ${OBJECTDIR}/CharacterPostionInString.o: CharacterPostionInString.c 
 	${MKDIR} -p ${OBJECTDIR}
@@ -72,11 +71,6 @@ ${OBJECTDIR}/Main.o: Main.c
 	${MKDIR} -p ${OBJECTDIR}
 	${RM} $@.d
 	$(COMPILE.c) -O2 -MMD -MP -MF $@.d -o ${OBJECTDIR}/Main.o Main.c
-
-${OBJECTDIR}/_ext/279880100/POS.o: ../../Desktop/POS.C 
-	${MKDIR} -p ${OBJECTDIR}/_ext/279880100
-	${RM} $@.d
-	$(COMPILE.cc) -O2 -MMD -MP -MF $@.d -o ${OBJECTDIR}/_ext/279880100/POS.o ../../Desktop/POS.C
 
 # Subprojects
 .build-subprojects:

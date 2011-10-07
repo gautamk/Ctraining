@@ -7,16 +7,20 @@
 
 #include <stdio.h>
 #include <stdlib.h>
-#include <GautamImplementations.h>
+#include <string.h>
+#include "GautamImplementations.h"
 
 /*
  * 
  */
 int main(int argc, char** argv) {
     
-    char *str = calloc(200,sizeof(char));
-    scanf("%s",str);
-    printf("\n%d",g_str_len(str));
+    char *str1 = calloc(200,sizeof(char)),*str2 = calloc(200,sizeof(char));
+    printf("Enter the 2 strings : ");
+    scanf("%s",str1);
+    g_str_cpy(str2,str1);
+    
+    printf("My:%s , %s",str1 , str2);
 
     return (EXIT_SUCCESS);
 }
