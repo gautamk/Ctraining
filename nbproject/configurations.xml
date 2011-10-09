@@ -15,6 +15,7 @@
       <itemPath>Automobile.h</itemPath>
       <itemPath>CharacterPostionInString.c</itemPath>
       <itemPath>GautamImplementations.h</itemPath>
+      <itemPath>RANDOM.h</itemPath>
       <itemPath>main.c</itemPath>
     </logicalFolder>
     <logicalFolder name="TestFiles"

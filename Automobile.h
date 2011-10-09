@@ -83,9 +83,10 @@ void automobile_print_engine_part(const int offset){
     {
         current = (Eparts+offset);
         printf("EnginePart\n  Serial Number:%X",current->serial_number);
-        printf("\n  Material:%s",current->material);
         printf("\n  Quantity:%u",current->quantity);
         printf("\n  Year of manufacture:%u",current->year_of_manufacture);
+        printf("\n  Material:%s",current->material);
+        printf("\n");
     }
 }
 
@@ -106,5 +107,35 @@ void automobile_find_part(const int start_serial_number,const int end_serial_num
                 ){
             automobile_print_engine_part(i);
         }
+    }
+}
+void automobile_cli_engine_part(){
+    /*
+     * Get input from the user and add Engine part to the array
+     */
+    int serial_number;
+    unsigned int qty , yom;
+    char material[100];
+    printf("Enter the details of the Engine Part :-\n");
+    printf("\tSerial Number :");scanf("%X",&serial_number);
+    printf("\tQuantity:");scanf("%u",&qty);
+    printf("\tYear of Manufacture:");scanf("%u",&yom);
+    printf("\tMaterial:");scanf("%s",material);
+    /*
+     * To consume any lingering spaces and \n new lines 
+     * an extra scanf is added
+     */
+    getchar();
+    automobile_add_part(serial_number,yom,qty,material);
+}
+void automobile_auto_input(){
+    int i, quantity,year_of_manufacture,serial_number;
+    char material[20]="something";
+    for(i = 0;i<max_number_of_parts;i++){
+        quantity = i;
+        year_of_manufacture=2000+i;
+        serial_number = 0xbaf + i;
+        automobile_add_part(serial_number,quantity,year_of_manufacture,material);
+        
     }
 }
