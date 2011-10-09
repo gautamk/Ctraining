@@ -8,19 +8,15 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
-#include "GautamImplementations.h"
+#include "Automobile.h"
 
 /*
  * 
  */
 int main(int argc, char** argv) {
     
-    char *str1 = calloc(200,sizeof(char)),*str2 = calloc(200,sizeof(char));
-    printf("Enter the 2 strings : ");
-    scanf("%s",str1);
-    g_str_cpy(str2,str1);
+    automobile_init(20);
     
-    printf("My:%s , %s",str1 , str2);
 
     return (EXIT_SUCCESS);
 }

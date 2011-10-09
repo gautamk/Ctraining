@@ -1,3 +1,3 @@
-build/Debug/GNU-Linux-x86/Main.o: Main.c GautamImplementations.h
+build/Debug/GNU-Linux-x86/Main.o: Main.c Automobile.h
 
-GautamImplementations.h:
+Automobile.h:
