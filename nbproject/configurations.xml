@@ -17,6 +17,7 @@
       <itemPath>GautamImplementations.h</itemPath>
       <itemPath>RANDOM.h</itemPath>
       <itemPath>main.c</itemPath>
+      <itemPath>setBit.h</itemPath>
     </logicalFolder>
     <logicalFolder name="TestFiles"
                    displayName="Test Files"
