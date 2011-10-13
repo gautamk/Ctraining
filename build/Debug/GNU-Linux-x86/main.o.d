@@ -1,3 +1,3 @@
-build/Debug/GNU-Linux-x86/main.o: main.c setBit.h
+build/Debug/GNU-Linux-x86/main.o: main.c int2bin.h
 
-setBit.h:
+int2bin.h:

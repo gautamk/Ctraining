@@ -16,8 +16,10 @@
       <itemPath>CharacterPostionInString.c</itemPath>
       <itemPath>GautamImplementations.h</itemPath>
       <itemPath>RANDOM.h</itemPath>
+      <itemPath>int2bin.h</itemPath>
       <itemPath>main.c</itemPath>
       <itemPath>setBit.h</itemPath>
+      <itemPath>structTable.c</itemPath>
     </logicalFolder>
     <logicalFolder name="TestFiles"
                    displayName="Test Files"

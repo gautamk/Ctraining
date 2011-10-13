@@ -15,6 +15,7 @@ extern "C" {
     void setBit(char *str ,int bit2Set){
         int offset = bit2Set/8;
         int bit_offset = bit2Set-offset;
+        
         *(str+offset)|=(1<<bit_offset);        
     }
 

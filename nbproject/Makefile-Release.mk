@@ -35,6 +35,7 @@ OBJECTDIR=${CND_BUILDDIR}/${CND_CONF}/${CND_PLATFORM}
 # Object Files
 OBJECTFILES= \
 	${OBJECTDIR}/CharacterPostionInString.o \
+	${OBJECTDIR}/structTable.o \
 	${OBJECTDIR}/main.o
 
 
@@ -66,6 +67,11 @@ ${OBJECTDIR}/CharacterPostionInString.o: CharacterPostionInString.c
 	${MKDIR} -p ${OBJECTDIR}
 	${RM} $@.d
 	$(COMPILE.c) -O2 -MMD -MP -MF $@.d -o ${OBJECTDIR}/CharacterPostionInString.o CharacterPostionInString.c
+
+${OBJECTDIR}/structTable.o: structTable.c 
+	${MKDIR} -p ${OBJECTDIR}
+	${RM} $@.d
+	$(COMPILE.c) -O2 -MMD -MP -MF $@.d -o ${OBJECTDIR}/structTable.o structTable.c
 
 ${OBJECTDIR}/main.o: main.c 
 	${MKDIR} -p ${OBJECTDIR}
