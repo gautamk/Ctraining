@@ -19,6 +19,7 @@
       <itemPath>int2bin.h</itemPath>
       <itemPath>main.c</itemPath>
       <itemPath>setBit.h</itemPath>
+      <itemPath>stringMyimplementation.h</itemPath>
       <itemPath>structTable.c</itemPath>
     </logicalFolder>
     <logicalFolder name="TestFiles"

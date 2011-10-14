@@ -7,13 +7,17 @@
 
 #include <stdio.h>
 #include <stdlib.h>
-#include "int2bin.h"
+#include "stringMyimplementation.h"
 
 /*
  * 
  */
 int main(int argc, char** argv) {
-    printf("%8u",int2binary(2));
+    char *c1="lle",*c2="Hell";
+    char *c3;
+    
+    printf("%d",strncmp(c1,c2,10));
+    
     return (EXIT_SUCCESS);
     
 }

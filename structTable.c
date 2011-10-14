@@ -1,4 +1,5 @@
 #include<stdlib.h>
+#include<stdio.h>
 struct Det{
     char *name;
     char *fatherName;
